@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文件到web1</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <form class="form-inline" role="form" action="/upload/" method="post" enctype="multipart/form-data"
+                  accept-charset="UTF-8">
+                <p><input type="file" name="file"></p>
+                <p>主机:<input type="text" name="host"></p>
+                <p>用户名: <input type="text" name="user"></p>
+                <p>密码: <input type="password" name="pwd"></p>
+                <p><input type="submit" value="上传文件" class="btn-warning"></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+{#<div class="form-group">#}
+{#    <label class="col-sm-2 control-label">主机</label>#}
+{#    <div class="col-sm-9">#}
+{#        {% for tag in tags %}#}
+{#            <label class="checkbox-inline">#}
+{#                <input value="{{ tag.id }}" type="checkbox">#}
+{#            </label>#}
+{#        {% endfor %}#}
+{#    </div>#}
+{#</div>#}
+<!--
+{#                <select name="host">#}
+{#                    {% for obj in obj_list %}#}
+{#                        <option value="{{ forloop.counter }}">{{ obj }}</option>#}
+{#                    {% endfor %}#}
+{#                </select>#}
+--->
+
+</body>
+</html>
